@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 62.5%;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "top-left top-right"
+    "bottom-left bottom-right";
+}
+
+.quadrant {
+  height: 100%;
+}
+
+#top-left {
+  grid-area: top-left;
+  background-color: whitesmoke;
+  border-bottom: 1px solid palevioletred;
+  border-right: 1px solid palevioletred;
+}
+
+#top-right {
+  grid-area: top-right;
+}
+
+#bottom-left {
+  grid-area: bottom-left;
+}
+
+#bottom-right {
+  grid-area: bottom-right;
+}
