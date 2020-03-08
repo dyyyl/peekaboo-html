@@ -30,6 +30,15 @@ main {
 
 #top-right {
   grid-area: top-right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#circle {
+  border-radius: 50%;
+  width: 20rem;
+  background: pink;
 }
 
 #bottom-left {
